@@ -28,9 +28,9 @@ button:focus {
 }
 
 h1 {
-    font-size: 2.2em;
-    width: 70%;
-    margin: 2% 10% 3% 10%;
+    font-size: 2em;
+    width: 80%;
+    margin: 3% 2% 2% 2%;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ h1::after {
     display: inline-block;
     height: 1px;
     vertical-align: middle;
-    width: 15%;
+    width: 10%;
     margin: 1%;
 }
 
@@ -61,7 +61,7 @@ blockquote {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     border-left: solid 3px #ffffff;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 
 blockquote p {
@@ -90,7 +90,6 @@ main {
     min-height: 100vh;
     font-family: Avanth;
     color: #fff;
-    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-align: center;
@@ -166,11 +165,12 @@ nav {
     background-color: #fbb040;
 }
 
-#navList {
+.navList {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    max-width: 100%;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -181,9 +181,10 @@ nav {
     flex-shrink: 0;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
+    position: relative;
 }
 
-#navList p,
+.navList p,
 .buttonHolder p {
     display: none;
     font-size: 1.2vw;
@@ -255,6 +256,7 @@ nav {
     width: 40px;
     height: 30px;
     background: transparent;
+    position: relative;
     border: 0;
     padding: 0;
     margin: 0;
@@ -325,7 +327,6 @@ nav {
     -ms-flex-align: start;
     align-items: flex-start;
     text-align: justify;
-    line-height: 25px;
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.3em;
 }
@@ -616,7 +617,7 @@ footer {
         min-height: 50%;
     }
 
-    #navList p {
+    .navList p {
         font-size: 1.4vw;
     }
 
@@ -686,10 +687,10 @@ footer {
         height: 35%;
     }
 
-    #navList {
+    .navList {
+        position: relative;
         height: 100vh;
-        max-height: 100vh;
-        width: 100vw;
+        width: 100%;
         -ms-flex-pack: distribute;
         justify-content: space-around;
         display: -webkit-box;
@@ -788,6 +789,6 @@ footer {
     }
     .address {
         text-align: center;
-        margin: 0% 10% 0 10%;
+        margin: 0 10% 0 10%;
     }
 }

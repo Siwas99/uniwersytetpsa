@@ -100,7 +100,7 @@
                         </button>
                         </div>
 
-                        <div id="navList">
+                        <div class="navList">
                             <p> <span style="font-family:Myriad; letter-spacing: 2px;">Uniwersytet</span>Twojego Psa</p>
                             <a href="index.html" class="menuButton buttonHover">Start</a>
                             <a href="training.html" class="menuButton buttonHover">Szkolenia</a>
